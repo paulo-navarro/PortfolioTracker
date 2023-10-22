@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: "SpaceOpera",
+  name: "PortfolioTracker",
 };
 </script>
 
@@ -20,7 +20,6 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   background-color: #000;
   height: 100%;
   width: 100%;

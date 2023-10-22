@@ -1,5 +1,5 @@
 {
-  "name": "space-opera",
+  "name": "portfolio-tracker",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,8 +8,10 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^1.5.0",
     "cli": "^1.0.1",
     "core-js": "^3.8.3",
+    "near-api-js": "^2.1.4",
     "vue": "^3.3.4",
     "vue-router": "^4.2.2"
   },
