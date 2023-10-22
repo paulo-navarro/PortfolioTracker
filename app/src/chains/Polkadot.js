@@ -29,7 +29,7 @@ export default class Polkadot extends Chain {
                                 this.calcDecimals(asset.nomination_bonded, asset.decimal);
           assets.push({
             ...this.getPolkaAssetObj(),
-            name: asset.symbol,
+            symbol: asset.symbol,
             freeBalance: amount,
             lockedBalance: lockedBalance,
             totalBalance: amount + lockedBalance
@@ -53,6 +53,7 @@ export default class Polkadot extends Chain {
     getPolkaAssetObj() {
         return {
             ...this.genAssetObj(),
+            priceName: this.chain,
             chain: this.chain,
         }
     }

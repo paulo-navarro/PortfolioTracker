@@ -2,28 +2,10 @@
   <router-view />
 </template>
 
-<script>
-export default {
-  name: "PortfolioTracker",
-};
-</script>
+<script lang="ts">
+import { defineComponent } from 'vue';
 
-<style>
-html, body {
-  padding: 0;
-  margin: 0;
-  height: 100%;
-  width: 100%;
-}
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  background-color: #000;
-  height: 100%;
-  width: 100%;
-  padding: 60px;
-  margin: 0;
-}
-</style>
+export default defineComponent({
+  name: 'App'
+});
+</script>

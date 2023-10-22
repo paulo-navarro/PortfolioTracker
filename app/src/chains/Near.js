@@ -29,8 +29,6 @@ export default class Near extends Chain{
         lockedBalance: amountInStake,
         totalBalance: freeAmount + amountInStake
       })
-      
-      console.log(stakes)
 
       return {chain: this.chain, address: address, assets: assets}
     }
@@ -38,7 +36,8 @@ export default class Near extends Chain{
     getNearAssetObj() {
         return {
             ...this.genAssetObj(),
-            name: "NEAR",
+            symbol: "NEAR",
+            priceName: this.chain,
             chain: this.chain,
         }
     }
